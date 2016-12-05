@@ -1,0 +1,77 @@
+#palette {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+}
+
+#palette>div.panel {
+    width: 300px;
+    height: 300px;
+    background-color: #444;
+}
+
+#palette>div.panel>div {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#palette>div.panel>div.xy {
+    background: -webkit-linear-gradient(rgba(0,0,0,0), #000), -webkit-linear-gradient(left, #FFF, rgba(255,255,255,0));
+    background: -o-linear-gradient(rgba(0,0,0,0), #000), -o-linear-gradient(left, #FFF, rgba(255,255,255,0));
+    background: linear-gradient(rgba(0,0,0,0), #000), linear-gradient(to right, #FFF, rgba(255,255,255,0));
+    background-color: red;
+    width:75%;
+    height: 75%;
+    margin: 2% 0 0 2%;
+    cursor: cell;
+}
+
+#palette>div.panel>div.z {
+    background: -webkit-linear-gradient(red 0%, #f0f 17%, #00f 33%, #0ff 50%, #0f0 67%, #ff0 83%, red 100%);
+    background: -o-linear-gradient(red 0%, #f0f 17%, #00f 33%, #0ff 50%, #0f0 67%, #ff0 83%, red 100%);
+    background: linear-gradient(red 0%, #f0f 17%, #00f 33%, #0ff 50%, #0f0 67%, #ff0 83%, red 100%);
+    width: 20%;
+    height: 75%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+#palette>div.panel>div.alpha {
+    background: -webkit-linear-gradient(left, #444, rgba(0,0,0,0));
+    background: -o-linear-gradient(left, #444, rgba(0,0,0,0));
+    background: linear-gradient(to right, #444, rgba(0,0,0,0));
+    width: 96%;
+    height: 20%;
+    margin-left: 2%;
+    background-color: red;
+    position: relative;
+    cursor: pointer;
+}
+
+#palette>div.panel>div.z>div.z-cursor, #palette>div.panel>div.alpha>div.alpha-cursor {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    border: 8px solid #fff;
+}
+
+#palette>div.panel>div.z>div.z-cursor {
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: -8px;
+    border-color: transparent #fff;
+}
+
+#palette>div.panel>div.alpha>div.alpha-cursor {
+    top: 0;
+    right: -8px;
+    height: 100%;
+    width: 0;
+    border-color: #fff transparent;
+}
