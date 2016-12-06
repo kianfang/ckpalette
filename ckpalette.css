@@ -20,6 +20,17 @@
     overflow: hidden;
 }
 
+#palette>div.panel>div>div.wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 #palette>div.panel>div.xy {
     background: -webkit-linear-gradient(rgba(0,0,0,0), #000), -webkit-linear-gradient(left, #FFF, rgba(255,255,255,0));
     background: -o-linear-gradient(rgba(0,0,0,0), #000), -o-linear-gradient(left, #FFF, rgba(255,255,255,0));
@@ -28,6 +39,20 @@
     width:75%;
     height: 75%;
     margin: 2% 0 0 2%;
+}
+
+#palette>div.panel>div.xy>div.xy-cursor {
+    border-radius: 50%;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid rgba(50, 50, 50, 0.9);
+    position: absolute;
+    top: -6px;
+    right: -6px;
+}
+
+#palette>div.panel>div.xy>div.wrap {
     cursor: cell;
 }
 
@@ -38,7 +63,6 @@
     width: 20%;
     height: 75%;
     margin-left: 1%;
-    cursor: pointer;
 }
 
 #palette>div.panel>div.alpha {
