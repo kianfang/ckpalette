@@ -19,18 +19,17 @@ $.fn.extend({
             </div>\
         </div>");
 
-        $palette = $("#palette");
-
-        var $alpha = this.find("#palette>div.panel>div.alpha");
-        var $alphaCursor = this.find("#palette>div.panel>div.alpha>div.alpha-cursor");
+        var $palette = this.find("#palette");
+        var $alpha = $palette.find("div.panel>div.alpha");
+        var $alphaCursor = $palette.find("div.panel>div.alpha>div.alpha-cursor");
         var alphaCursor = 1;
 
-        var $z = this.find("#palette>div.panel>div.z");
-        var $zCursor = this.find("#palette>div.panel>div.z>div.z-cursor");
+        var $z = $palette.find("div.panel>div.z");
+        var $zCursor = $palette.find("div.panel>div.z>div.z-cursor");
         var zCursor = 0;
 
-        var $xy = this.find("#palette>div.panel>div.xy");
-        var $xyCursor = this.find("#palette>div.panel>div.xy>div.xy-cursor");
+        var $xy = $palette.find("div.panel>div.xy");
+        var $xyCursor = $palette.find("div.panel>div.xy>div.xy-cursor");
         var xyCursor = [1, 1];
 
         var zColor = [255, 0, 0];
