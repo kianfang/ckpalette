@@ -46,7 +46,7 @@
     display: block;
     width: 12px;
     height: 12px;
-    border: 1px solid rgba(50, 50, 50, 0.9);
+    border: 1px solid #000;
     position: absolute;
     top: -6px;
     right: -6px;
@@ -54,6 +54,7 @@
 
 #palette>div.panel>div.xy>div.wrap {
     cursor: cell;
+    cursor: crosshair;
 }
 
 #palette>div.panel>div.z {
